@@ -3,19 +3,48 @@
 					"id": 1,
 					"question": "How many heroes are there in dota2?",
 					"options": [
-						"117",
-						"120",
-						"115",
-						"110"
-					
-					],
+								"117",
+								"120",
+								"115",
+								"110"
+						
+							   ],
 					"correct" : "117"
 				},
 				{	
 					"id": 2,
 					"question": "Who is the president of Russia?",
-					"options": ["Vladmir Putin","Donald Trump","Narendra Modi","Kim Jong-un"],
+					"options": [
+								"Vladmir Putin",
+								"Donald Trump",
+								"Narendra Modi",
+								"Kim Jong-un"
+								],
 					"correct" : "Vladmir Putin"
+				
+				},
+				{	
+					"id": 3,
+					"question": "Who is the current richest man on the planet?",
+					"options": [
+								"Bill Gates",
+								"Warren Buffet",
+								"Jeff Bezos",
+								"Mark Zuckerberg"
+								],
+					"correct" : "Jeff Bezos"
+				
+				},
+				{	
+					"id": 4,
+					"question": "Which Tech Company was valued at a trillion dollars in 2018?",
+					"options": [
+								"Samsung",
+								"Microsoft",
+								"Google",
+								"Apple"
+								],
+					"correct" : "Apple"
 				
 				}
 
