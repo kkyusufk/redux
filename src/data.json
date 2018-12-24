@@ -1,0 +1,22 @@
+[
+				{	
+					"id": 1,
+					"question": "How many heroes are there in dota2?",
+					"options": [
+						"117",
+						"120",
+						"115",
+						"110"
+					
+					],
+					"correct" : "117"
+				},
+				{	
+					"id": 2,
+					"question": "Who is the president of Russia?",
+					"options": ["Vladmir Putin","Donald Trump","Narendra Modi","Kim Jong-un"],
+					"correct" : "Vladmir Putin"
+				
+				}
+
+]
