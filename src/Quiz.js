@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
 import Questions from './Questions';
 import Answers from './Answers';
 //import Buttons from './Buttons';
@@ -12,24 +11,30 @@ class Quiz extends Component {
 	constructor(props){
 		super(props)
 		this.state = {
-			value: 1,
-			chk: null
+			value: 1
 		}
 
 	}
 
-	
-	
-
 	displayButtons = () => {
+		if (this.state.value < Data.length) {
 		const displayButtons = <button onClick={() => {
 			this.setState({
 				value: this.state.value + 1,
 			 }) 
 		}}> Next</button>
-			return displayButtons;
-		
+		return displayButtons;
+	} else if(this.state.value === Data.length) {
+		const displayButtons = <button onClick={() => {
+			this.setState({
+				value: this.state.value + 1
+			})
+		}}>Submit</button>
+		return displayButtons;
 	}
+			
+	}	
+	
 
 
     render() {
@@ -38,8 +43,7 @@ class Quiz extends Component {
 			<React.Fragment>
 			<h1>Quiz</h1>
 			<Questions value={this.state.value} />
-			<Answers value={this.state.value} 
-			/>
+			<Answers value={this.state.value}/>
 			{this.displayButtons()}
 			</React.Fragment>
 			)
